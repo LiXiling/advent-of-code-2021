@@ -23,7 +23,7 @@ for cmd, v in lines:
     elif cmd[0] == "u":
         depth -= v
 
-print(hoz_pos, depth, hoz_pos* depth)
+print(hoz_pos, depth, hoz_pos * depth)
 
 # Part 2
 # Code Duplication because I am lazy and it's a Hackathon
@@ -43,4 +43,4 @@ for cmd, v in lines:
     elif cmd[0] == "u":
         aim -= v
 
-print(hoz_pos, aim, depth, hoz_pos* depth)
+print(hoz_pos, aim, depth, hoz_pos * depth)

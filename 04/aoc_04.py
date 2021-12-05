@@ -21,13 +21,15 @@ for l in board_lines:
         single_board = []
         continue
     # normalize double space for single digit nums
-    l= " ".join(l.split())
+    l = " ".join(l.split())
     single_board.append([int(v) for v in l.rstrip().split(" ")])
 
 boards_arr = np.array(all_boards)
 print(boards_arr.shape)
 
 # Part 1
+
+
 def check_winner(arr):
     # Find full row
     tmp_arr = np.copy(arr)
@@ -42,6 +44,7 @@ def check_winner(arr):
     if win_idx[0].size > 0:
         return True, win_idx[0]
     return False, -1
+
 
 marker_arr = np.zeros_like(boards_arr)
 
