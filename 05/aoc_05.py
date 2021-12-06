@@ -58,7 +58,7 @@ for line in diag:
     # Handle lines in "reverse" order
     x_coords = np.arange(x_idx[0], x_idx[1] + 1)
     if np.diff(x_idx) < 0:
-        x_coords  = np.flip(np.arange(x_idx[1], x_idx[0] + 1))
+        x_coords = np.flip(np.arange(x_idx[1], x_idx[0] + 1))
 
     y_coords = np.arange(y_idx[0], y_idx[1] + 1)
     if np.diff(y_idx) < 0:
