@@ -1,6 +1,5 @@
 import os
 import numpy as np
-from numpy.lib.function_base import delete
 
 INPUT = os.path.join(os.path.dirname(__file__), "input.txt")
 
